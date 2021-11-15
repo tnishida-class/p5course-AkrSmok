@@ -11,8 +11,10 @@ function balloon(t){
   let w = textWidth(t);
   let h = textAscent() + textDescent();
   let p = 2;
+  let b = textAscent();
   fill(0);
-  rect(0, 0, w + p * 2, h + p * 2);
+  rect(0, 5, w + p * 2, h + p * 2, 10, 10, 10, 10);
+  triangle(w, b, w+10, b+10, w, b+10);
   fill(255);
   text(t, p, h + p);
 }
